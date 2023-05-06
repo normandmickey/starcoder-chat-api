@@ -8,7 +8,7 @@ class ChatBot:
         self.json_header = {"Content-Type": "application/json"}
         self.session = self.get_hc_session()
         self.conversation_id_list = []
-        self.active_model = "OpenAssistant/oasst-sft-6-llama-30b-xor"
+        self.active_model = "bigcode/starcoder"
         self.accepted_welcome_modal = False # Only when accepted, it can create a new conversation.
         self.current_conversation = self.new_conversation()
 
